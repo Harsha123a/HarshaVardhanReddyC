@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lightbox Photo Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="logo">
+        <h1>Photon Gallery</h1>
+    </div>
+    <!-- <h1>Photo Gallery</h1> -->
+    <div class="gallery">
+        <div class="thumbnail" onclick="openModal(0)">
+            <img src="img1.jpg" alt="Thumbnail 1">
+        </div>
+        <div class="thumbnail" onclick="openModal(1)">
+            <img src="img2.jpg" alt="Thumbnail 2">
+        </div>
+        <div class="thumbnail" onclick="openModal(2)">
+            <img src="img3.jpg" alt="Thumbnail 3">
+        </div>
+        <div class="thumbnail" onclick="openModal(3)">
+            <img src="img4.jpg" alt="Thumbnail 4">
+        </div>
+        <div class="thumbnail" onclick="openModal(4)">
+            <img src="img5.jpg" alt="Thumbnail 5">
+        </div>
+        <div class="thumbnail" onclick="openModal(5)">
+            <img src="img6.jpg" alt="Thumbnail 6">
+        </div>
+        <div class="thumbnail" onclick="openModal(6)">
+            <img src="img7.jpg" alt="Thumbnail 7">
+        </div>
+       <!-- Add more thumbnails as needed -->
+    </div>
+
+    <div id="lightboxModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="lightboxImage">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
